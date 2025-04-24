@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/form.css">
+</head>
+<body>
+    <div class="container">
+        
+    <section>
+        <div class="header">
+            <h1>Inscrição para o Evento Tech 2025</h1>
+            <p>Complete o formulário abaixo para se inscrever no evento</p>
+            <h2>Informações pessoais:</h2>
+         </div>
+        <form name="frmCadastro" method="post" action="#">
+            <fieldset class="cadastro">
+                <legend>Informações pessoais:</legend>
+                <label for="nome"></label>
+                <input type="text" name="txtname" id="nome" placeholder="   Nome completo"><br>
+                <label for="email"></label>
+                <input type="email" name="txtemail" id="email" placeholder="    E-mail"><br>
+                <label for="password"></label>
+                <input type="password" id="password" password="password" placeholder="   Senha"><br>
+                <label for="idade"></label>
+                <input type="idade" name="txtidade" id="idade" placeholder="    Idade"><br>
+                <label for="data-evento"></label>
+                <input type="date" id="data-evento" name="data-evento" min="1990-01-01" max="2025-12-31">
+            </fieldset>
+            <fieldset class="cadastro">
+                <legend>Preferencias do evento: </legend>
+                <label for="escolha">Tema de interesse: </label>
+                <select name="selEscolha" id="escolha">
+                    <option value="FE">Front-end</option>
+                    <option value="BE">Back-end</option>
+                    <option value="FS">Full-stack</option>
+                    <option value="CD">Ciência de dados</option>
+                </select>
+            <div class="checkBox">
+                <br><label for="">Segurança</label><br>
+                <input type="checkbox" id="web" name="desejo" value="web">
+                <label for="checkbox">Segurança</label><br>
+                <input type="checkbox" id="IA" name="desejo" value="IA">
+                <label for="checkbox">Segurança</label><br>
+                <input type="checkbox" id="SI" name="desejo" value="SI">
+                <label for="checkbox"></label>
+            </div>
+            </fieldset>
+            <fieldset class="cadastro">
+                <legend>Submissão de apresentação: </legend>
+                <label for="titulo"></label>
+                <input type="titulo" name="txttitulo" id="titulo" placeholder="     Título da Apresentação"><br>
+                <label for="resumo"></label>
+                <textarea name="txtresumo" id="resumo" placeholder="   Resumo da Apresentação"></textarea><br>
+                <label  for="arquivo">Anexar apresentação (PDF)</label>
+                <input type="file" id="arquivo" name="arquivo">
+            </fieldset>
+            <button type="reset">Enviar inscrição</button>
+            
+            <footer>&copy 2024 Evento Tech. Todos os direitos reservados.</footer>
+        </form>
+    </section>
+    </div>
+    
+</body>
+</html>
